@@ -2370,7 +2370,7 @@ label.header {
 	height: 300px !important;
 	width: 400px !important;
 	margin-top: 10%;
-	box-shadow: 5px 5px 10px 5px rgb(102, 98, 98);
+	box-shadow: 3px 3px 10px 3px rgb(70, 4, 4);
 }
 
 @media(max-width:900px) {

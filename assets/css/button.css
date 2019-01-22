@@ -1,24 +1,17 @@
 
 @media screen and (max-width: 875px) {
   .button-container {
-    display: none;
-    
+    display: none;  
   }
-
+  .front{
+    width: 100% !important;
+  }
+  
   h2 {
     font-size: 15vw !important;
   }
 }
 
-@media screen and (max-width: 600px) {
-  footer{
-    margin-left:0 !important; 
-  }
-}
-
-footer{
-  margin-left:120px; 
-}
 
 .button-row-container {
   width: 250px;

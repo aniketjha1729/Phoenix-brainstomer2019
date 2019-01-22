@@ -7,9 +7,14 @@
     <title>BrainStomer</title>
     <link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="assets/css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/css/style1.css">
     <link href="assets/css/button.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" src="assets/js/jquery-2.2.3.min.js"></script>
+    <script src="assets/js/responsiveslides.min.js"></script>
+    <script src="assets/js/easyResponsiveTabs.js"></script>
+    <script type="text/javascript" src="assets/js/move-top.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-3.1.1.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -19,9 +24,9 @@
 
         .topnav {
             overflow: hidden;
-            background-color:green;
+            background: url("assets/images/background.png");
             color: black;
-            box-shadow: 5px 5px 10px 5px rgb(209, 186, 186);  
+            box-shadow: 5px 5px 10px 5px rgb(70, 4, 4);  
         }
 
         .topnav a {
@@ -36,7 +41,7 @@
         }
 
         .topnav a:hover {
-            background-color: #ddd;
+            background-color: rgb(70, 165, 39);
             color: black;
         }
 
@@ -59,6 +64,12 @@
                 display: block;
                 color: black
             }
+            .topnav{
+                display: flex !important;
+                justify-content:center;
+                
+
+            }
         }
 
         @media screen and (max-width: 600px) {
@@ -71,6 +82,17 @@
                 right: 0;
                 top: 0;
                 color: black;
+            }
+            .w3-quarter{
+                display: flex;
+                flex-direction:column;
+                   
+            }
+            
+            
+            .topnav a:hover {
+            background-color:green;
+            color: black;
             }
 
             .topnav.responsive a {
@@ -89,7 +111,19 @@
 
         .sticky+.content {
             padding-top: 60px;
-        }   
+        } 
+        .slides-wrapper{
+            /* background: url("assets/images/background.png"); */
+            display: flex;
+            justify-content: center;
+            margin-top: 3%;
+            
+        }
+        .mySlides{
+            border-radius: 7px;
+            box-shadow: 5px 5px 10px 5px rgb(70, 4, 4);
+        }
+          
     </style>
 </head>
 <body>
@@ -153,10 +187,15 @@
                 </a>
             </div>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="responsive()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
+    <!-- slideshow -->
+    <div class="slides-wrapper">
+        <img class="mySlides" src="assets/images/g2.jpg">
+        <img class="mySlides" src="assets/images/g2.jpg" style="width:100%">
+        <img class="mySlides" src="assets/images/g3.jpg" style="width:100%">
+    </div>
+
+
     
     <!-- Gallery -->
     <div class="top_spl_courses">
@@ -257,31 +296,44 @@
     </div>
 
     <script>
-        function responsive() {
-                var x = document.getElementById("navbar");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-            window.onscroll = function () { stick() };
+        // function responsive() {
+        //         var x = document.getElementById("navbar");
+        //         if (x.className === "topnav") {
+        //             x.className += " responsive";
+        //         } else {
+        //             x.className = "topnav";
+        //         }
+        //     }
+        //     window.onscroll = function () { stick() };
 
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
+        //     var navbar = document.getElementById("navbar");
+        //     var sticky = navbar.offsetTop;
 
-            function stick() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
+        //     function stick() {
+        //         if (window.pageYOffset >= sticky) {
+        //             navbar.classList.add("sticky")
+        //         } else {
+        //             navbar.classList.remove("sticky");
+        //         }
+        //     }
+        var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                x[myIndex - 1].style.width = "1000px";
+                x[myIndex - 1].style.height = "500px";
+
+
+                setTimeout(carousel, 2000); // Change image every 2 seconds
             }
     </script>
-    <script type="text/javascript" src="assets/js/jquery-2.2.3.min.js"></script>
-    <script src="assets/js/responsiveslides.min.js"></script>
-    <script src="assets/js/easyResponsiveTabs.js"></script>
-    <script type="text/javascript" src="assets/js/move-top.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap-3.1.1.min.js"></script>
+    
 </body>
 </html>
