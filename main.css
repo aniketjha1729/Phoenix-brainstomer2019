@@ -36,6 +36,13 @@ body {
     font-family: 'Catamaran', sans-serif;
     font-size: 40px;
     }
+    .register-btn{
+      background-color: ;
+      margin-left:41vw;
+      margin-top: 25vh;
+      height: 50px;
+      width: 200px;
+    }
 
 		.rightDiv{
 				height: 90vh;
@@ -182,6 +189,9 @@ font-size: 30px;
       transform: scale(1.3);
       transition: all 1000ms;
      }
+     .registration{
+       background-color: aquamarine;
+     }
     
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
@@ -224,3 +234,161 @@ font-size: 30px;
       text-align: left;
     }
   } */
+  @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+/*
+.fonts {
+  font-family: 'Josefin Slab', serif;
+}
+*/
+
+
+.wrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.container {
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 
+    solid
+    1px
+    #CCC;
+}
+
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 120px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+  margin-left:41vw;
+  margin-top: 20vh;
+  height: 50px;
+  width: 200px;
+}
+
+.btnOrange {
+  background: #dcae1d;
+}
+
+
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+
+.btnOrange.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #A66615;
+}
+
+
+/* FLOAT */
+.btnFloat {
+  background: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btnFloat:before {
+  content: 'Register';
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5vw;
+  width: 400px;
+  height: 60px;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen.btnFloat:before {
+  background: #00AE68;
+}
+
+.btnLightBlue.btnFloat:before {
+  background: #5DC8CD;
+}
+
+.btnOrange.btnFloat:before {
+  background: #dcae1d;
+}
+
+.btnPurple.btnFloat:before {
+  background: #8D336A;
+}
+
+
+.btnFloat:before {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btnFloat:hover:before {
+  
+}
+
+.btnFloat:hover:before {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  -webkit-transform: scale(1.1,1.1);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* SLIDE */
+.btnSlide.btnBlueGreen {
+  background: 0;
+}
+
+.btnSlide .top {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  background: #00AE68;
+  z-index: 10;
+  transition: all 0.2s ;
+  border-radius: 5px;
+}
+
+.btnSlide.btnBlueGreen .top {
+  background: #00AE68;
+}
+
+.btnSlide.btnLightBlue .top {
+  background: #5DC8CD;
+}
+
+.btnSlide.btnOrange .top {
+  background: #FFAA40;
+}
+
+.btnSlide.btnPurple .top {
+  background: #A74982;
+}
+
+.btnSlide .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  color: #000;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.btnSlide:hover .top {
+  top: 40px;
+}
+
+
