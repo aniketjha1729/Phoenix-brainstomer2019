@@ -1,0 +1,394 @@
+body {
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header{
+    position: fixed;
+  }
+  
+  .topnav {
+    margin-top: 0px !important;
+    overflow: hidden;
+    height: 10vh;
+  }
+  .outerDiv{
+		height: 100vh;
+    width: 100vw; 
+		margin: 0px auto;
+    padding: 5px;
+    background-image: url("background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+      
+		.leftDiv{
+		height: 90vh;
+		width: 60%;
+		float: left;
+    }
+    .second-logo{
+    padding: 85px 0px 0px 50px;
+    }
+    .sub-title{
+    padding: 0px 0px 10px 150px;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 40px;
+    }
+    .register-btn{
+      background-color: ;
+      margin-left:41vw;
+      margin-top: 25vh;
+      height: 50px;
+      width: 200px;
+    }
+
+		.rightDiv{
+				height: 90vh;
+				width: 40%;
+				float: right;
+     }	
+     .brain{
+     padding:80px 0px 0px 0px;
+    }		
+  
+  .topnav a {
+    float: left; 
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 25px 130px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Staatliches', cursive;
+  }
+  
+  .topnav a:hover {
+    color: #D2D1D7;
+  }
+  
+  
+  .topnav .icon {
+    display: none;
+  }
+  .about{
+    /* margin-top: 10vh; */
+    height: 100vh;
+    width: 100vw;
+    background-image: url("main.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+
+  .phoenix-logo{
+    margin-top: 12vh;
+    float: left;
+    height: 45vh;
+    width: 20vw;
+  }
+  .phoenix-about{
+    margin-top: 12vh;
+    float: right;
+    height: 45vh;
+    width: 80vw;
+  }
+  .brainstorm-logo{
+float: right;
+height: 50vh;
+    width: 20vw;
+  }
+  .brainstorm-about{
+    float: left;
+    height: 50vh;
+    width: 80vw;
+  }
+  .bg-hd{
+    font-family: 'Acme', sans-serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Courgette', cursive;
+font-size: 40px;
+text-decoration: underline orange;
+  }
+  .main-ct{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+font-size: 30px;
+color: black;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .container img{
+        margin: 5px;
+        transition: all 1s;
+    }
+    .container img:hover{
+        transform: scale(1.1)
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* body {
+      margin: 0;
+      font-family: Arial;
+    } */
+    
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+    .gallery{
+      margin-top: 7vh;
+      background-image: url("plain-white-background.jpg");
+      background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+    }
+    
+    .row {
+      margin-top: 20vh;
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 10px 30px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      /* box-shadow: 5px 5px grey; */
+      padding: 10px;
+    }
+    .column img:hover {
+      transform: scale(1.3);
+      transition: all 1000ms;
+     }
+     .registration{
+       background-color: aquamarine;
+     }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+
+  
+  /* @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } */
+  @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+/*
+.fonts {
+  font-family: 'Josefin Slab', serif;
+}
+*/
+
+
+.wrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.container {
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 
+    solid
+    1px
+    #CCC;
+}
+
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 120px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+  margin-left:41vw;
+  margin-top: 20vh;
+  height: 50px;
+  width: 200px;
+}
+
+.btnOrange {
+  background: #dcae1d;
+}
+
+
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+
+.btnOrange.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #A66615;
+}
+
+
+/* FLOAT */
+.btnFloat {
+  background: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btnFloat:before {
+  content: 'Register';
+  font-size: 20px;
+  color: #000;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5vw;
+  width: 400px;
+  height: 60px;
+  border-radius: 5px;
+  transition: all 0.2s ;
+  border: #000 solid 2px;
+}
+
+.btnBlueGreen.btnFloat:before {
+  background: #00AE68;
+}
+
+.btnLightBlue.btnFloat:before {
+  background: #5DC8CD;
+}
+
+.btnOrange.btnFloat:before {
+  background: #dcae1d;
+}
+
+.btnPurple.btnFloat:before {
+  background: #8D336A;
+}
+
+
+.btnFloat:before {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btnFloat:hover:before {
+  
+}
+
+.btnFloat:hover:before {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  -webkit-transform: scale(1.1,1.1);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* SLIDE */
+.btnSlide.btnBlueGreen {
+  background: 0;
+}
+
+.btnSlide .top {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  background: #00AE68;
+  z-index: 10;
+  transition: all 0.2s ;
+  border-radius: 5px;
+}
+
+.btnSlide.btnBlueGreen .top {
+  background: #00AE68;
+}
+
+.btnSlide.btnLightBlue .top {
+  background: #5DC8CD;
+}
+
+.btnSlide.btnOrange .top {
+  background: #FFAA40;
+}
+
+.btnSlide.btnPurple .top {
+  background: #A74982;
+}
+
+.btnSlide .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  color: #000;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.btnSlide:hover .top {
+  top: 40px;
+}
+
+
