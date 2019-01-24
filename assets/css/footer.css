@@ -1,33 +1,33 @@
 body{
     margin: 0;
 }
-.col-footer{
+/* .col-footer{
     border: 1px solid black;
     
-}
+} */
 .myfooter{
-    
-    background-color: rgb(80, 74, 74);
+    height: 100%;
+    background-color: rgb(88, 81, 81);
     color: aliceblue;
 } 
 .row-footer{
-    margin-top: 4%;
+    margin-top: 0%;
 }
 .bottom-footer{
     border: 1px solid black;
-    background-color: rgb(80, 74, 74);
+    background-color: rgb(44, 42, 42);
 
 }
 .myimg{
         
-        width: 90%;
-        height: 90%;
-        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        /* border-radius: 50%; */
          
 }
-.last{
+/* .last{
     border: 1px solid black;
-}
+} */
 .row-footer-bottom{
     margin-top:2%;
     margin-left: 20px !important;

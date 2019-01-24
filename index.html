@@ -17,6 +17,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="shortcut icon" href="assets/images/brainstomer-logo.png"/>
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
     <title>Brainstorm</title>
     <style>
 
@@ -26,13 +37,19 @@
             border-radius: 10px;
     }
     .test-container-phoenix{
-        background-color: #dcae1d;
+        /* background-color: #dcae1d; */
         margin-top: 0%;
     }
     .test-container-brainstomer{
-        background-color: #dc631d;
+        /* background-color: #dc631d; */
         margin-top: 0%;
     }
+    .my-nav-last{
+        background-color: black !important;
+        margin-top:0%;
+         
+    }
+    
     </style>
 </head>
 <!-- ======================================================================================================== -->
@@ -40,7 +57,7 @@
 
 <body>
     <div class="outerDiv">
-        <header>
+        <!-- <header>
             <div class="topnav" id="myTopnav">
                 <a href="#home" class="active">Home</a>
                 <a href="#gallery">Gallery</a>
@@ -51,8 +68,44 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-        </header>
-        <div class="leftDiv" id="home">
+        </header> -->
+    <!-- =====================================================================     -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-nav-last" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">BrainStomer</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#services">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    <!-- =============================================================================== -->
+        
+    <div class="leftDiv" id="home">
             <img class="second-logo" src="assets/images/second-logo.png" height="300" width="700">
             <h2 class="sub-title">Get Your Master Brain Trigerred.</h2>
             <a href="#register" title="Button border orange" class="button btnFloat btnOrange">Register</a>
@@ -62,30 +115,32 @@
         </div>
     </div>
 <!-- =================================================================================================== -->
-    <div class="test-container-phoenix">
-            <h1><center>Phoenix </center></h1>
+    <div class="about-my">
+        <div class="test-container-phoenix">
+                <h1><center>Phoenix </center></h1>
+                <div class="container test-container">
+                    <div class="row row-footer">
+                        <div class="col-lg-4 col-sm-6 col-footer"> <img class="test-img" src="assets/images/phoenix-logo.jpg"></div>
+                        <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae nostrum cupiditate. <p> Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
+                        <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae nostrum cupiditate. <p> Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="test-container-brainstomer">
+            <h1>
+                <center>BrainStomer</center>
+            </h1>
             <div class="container test-container">
                 <div class="row row-footer">
-                    <div class="col-lg-4 col-sm-6 col-footer"> <img class="test-img" src="assets/images/phoenix-logo.jpg"></div>
-                    <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae nostrum cupiditate. <p> Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
-                    <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae nostrum cupiditate. <p> Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
-                </div>
-            </div>
-    </div>
-<!-- ========================================================================================================== -->
-    <div class="test-container-brainstomer">
-        <h1>
-            <center>BrainStomer</center>
-        </h1>
-        <div class="container test-container">
-            <div class="row row-footer">
-                <div class="col-lg-4 col-sm-6 col-footer"> <img class="test-img" src="assets/images/brainstomer-logo.png"></div>
-                <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur molestiae nostrum cupiditate. Aliquid placeat quisquam ut temporibus natus porro maxime
-                    voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
-                <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                        molestiae nostrum cupiditate. Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque
-                        nulla, nesciunt, adipisci at quae et? Reprehenderit!
+                    <div class="col-lg-4 col-sm-6 col-footer"> <img class="test-img" src="assets/images/brainstomer-logo.png"></div>
+                    <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur molestiae nostrum cupiditate. Aliquid placeat quisquam ut temporibus natus porro maxime
+                        voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
+                    <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                            molestiae nostrum cupiditate. Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque
+                            nulla, nesciunt, adipisci at quae et? Reprehenderit!
+                    </div>
                 </div>
             </div>
         </div>
@@ -334,14 +389,14 @@
             <div class="container">
                 <div class="row row-footer">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-footer">
-                        <img src="assets/images/phoenix-logo.jpg" class="myimg">
+                       <center> <img src="assets/images/phoenix-logo.jpg" class="myimg"></center>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-footer">
                         <b><h4>Contact</h4></b><br>
                         <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Technocity,Garia,Kolkata-700152</p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91000000000</p>
                         <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Email:xyz@gmail.com</p>
-                        <p><i class="fa fa-university" aria-hidden="true"></i></p>
+                       
 
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-footer">
@@ -369,6 +424,11 @@
                     </div>
                 </div>
         </div>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Custom scripts for this template -->
+        <script src="js/agency.min.js"></script>
     
 </body>
 </html>

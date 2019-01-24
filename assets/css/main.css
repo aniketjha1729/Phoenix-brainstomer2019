@@ -26,9 +26,9 @@ body {
 		width: 60%;
 		float: left;
     }
-    /* .second-logo{
-    padding: 85px 0px 0px 50px;
-    } */
+    .second-logo{
+    padding: 130px 0px 0px 50px;
+    }
     .sub-title{
     padding: 0px 0px 10px 150px;
     font-family: 'Staatliches', cursive;
@@ -50,9 +50,9 @@ body {
 				width: 40%;
 				float: right;
      }	
-     /* .brain{
-     padding:80px 0px 0px 0px;
-    }		 */
+     .brain{
+     padding:130px 0px 0px 0px;
+    }		
   
   .topnav a {
     float: left; 
@@ -73,14 +73,14 @@ body {
   .topnav .icon {
     display: none;
   }
-  .about{
-    /* margin-top: 10vh; */
-    /* height: 100vh;
-    width: 100vw; */
-    background-image: url("../images/main.jpg");
+  .about-my{
+    background: url("../images/main.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-    background-attachment: fixed;
+    
+   
+    
+    
   }
 
   /* .phoenix-logo{
@@ -152,7 +152,7 @@ color: black;
       padding: 32px;
     }
     .gallery{
-      margin-top: 7vh;
+      /* margin-top: 7vh; */
       background-image: url("../images/plain-white-background.jpg");
       background-repeat:no-repeat;
     background-size:cover;
