@@ -377,5 +377,13 @@ input.input100 {
   }
 }
 
-
+.mywrapper {
+            margin-top: 2%;
+        }
+        .myrow {
+            margin-top: 0%;
+        }
+        .error{
+            color:red;
+        }
 

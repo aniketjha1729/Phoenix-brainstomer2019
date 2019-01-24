@@ -2,9 +2,9 @@ body {
     margin: 0; 
     font-family: Arial, Helvetica, sans-serif;
   }
-  header{
+  /* header{
     position: fixed;
-  }
+  } */
   
   .topnav {
     margin-top: 0px !important;
@@ -26,9 +26,9 @@ body {
 		width: 60%;
 		float: left;
     }
-    .second-logo{
+    /* .second-logo{
     padding: 85px 0px 0px 50px;
-    }
+    } */
     .sub-title{
     padding: 0px 0px 10px 150px;
     font-family: 'Staatliches', cursive;
@@ -50,9 +50,9 @@ body {
 				width: 40%;
 				float: right;
      }	
-     .brain{
+     /* .brain{
      padding:80px 0px 0px 0px;
-    }		
+    }		 */
   
   .topnav a {
     float: left; 
@@ -75,15 +75,15 @@ body {
   }
   .about{
     /* margin-top: 10vh; */
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
     background-image: url("../images/main.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed;
   }
 
-  .phoenix-logo{
+  /* .phoenix-logo{
     margin-top: 12vh;
     float: left;
     height: 45vh;
@@ -94,7 +94,7 @@ body {
     float: right;
     height: 45vh;
     width: 80vw;
-  }
+  } */
   .brainstorm-logo{
 float: right;
 height: 50vh;
@@ -125,18 +125,18 @@ text-decoration: underline orange;
 font-size: 30px;
 color: black;
   }
-  .container{
+  /* .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    }
-    .container img{
+    } */
+    /* .container {
         margin: 5px;
         transition: all 1s;
     }
-    .container img:hover{
+    .container {
         transform: scale(1.1)
-    }
+    } */
   
     * {
       box-sizing: border-box;
@@ -160,7 +160,7 @@ color: black;
 
     }
     
-    .row {
+    .row-gallery {
       margin-top: 20vh;
       display: -ms-flexbox; /* IE10 */
       display: flex;
