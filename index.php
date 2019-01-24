@@ -11,9 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme|Catamaran|Play|Staatliches" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme|Catamaran|Courgette|Play|Staatliches" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Barlow|Catamaran|Courgette|Open+Sans+Condensed:300|Play|Staatliches"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Barlow|Catamaran|Courgette|Open+Sans+Condensed:300|Play|Staatliches"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="footer.css">
     <title>brainstorm</title>
     <style>
         .mywrapper {
@@ -25,6 +28,7 @@
         .error{
             color:red;
         }
+        
     </style>
 </head>
 
@@ -33,7 +37,7 @@
         <header>
             <div class="topnav" id="myTopnav">
                 <a href="#home" class="active">Home</a>
-                <a href="#news">Gallery</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
                 <a href="#register">Register</a>
                 <a href="#about">About</a>
@@ -42,13 +46,9 @@
                 </a>
             </div>
         </header>
-        <div class="leftDiv">
+        <div class="leftDiv" id="home">
             <img class="second-logo" src="assets/images/second-logo.png" height="300" width="700">
             <h2 class="sub-title">Get Your Master Brain Trigerred.</h2>
-
-            <!-- <button class="register-btn">
-                hello
-            </button> -->
             <a href="" title="Button border orange" class="button btnFloat btnOrange">Register</a>
         </div>
         <div class="rightDiv">
@@ -101,7 +101,7 @@
 
 
     <!-- Gallery -->
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <center>
             <h1>Gallery</h1>
             <p>The most beutiful things are not associated with money ; they are memories and moments.</p>
@@ -221,19 +221,27 @@
     							('$teamname','$firstname','$secondname','$email','$phone','$iname')";
     						$sql=mysqli_query($conn,$query);
     						if($sql){	
-    							?><script> alert("Sucessful");</script><?php
+                                ?>
+                                <script> alert("Sucessful");</script>
+                                <?php
     						}else{
     							echo "sql error";
     						}
     					}else{
-    						?><script> alert("Team Already Registered");</script><?php
+                            ?>
+                            <script> alert("Team Already Registered");</script>
+                            <?php
     					}
     				}
     			}else{
-    				?><script> alert("Something Went Wrong");</script><?php
+                    ?>
+                    <script> alert("Something Went Wrong");</script>
+                    <?php
     			}
     		}else{
-                ?><script> alert("Something Went Wrong");</script><?
+                ?>
+                <script> alert("Something Went Wrong");</script>
+                <?
     		}	
     	}
     
@@ -247,7 +255,7 @@
     <!-- <==============================================================================================================>    -->
         <!-- From -->
         <form method="post" class="myform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-            <div class="container mywrapper">
+            <div class="container mywrapper" id="register">
                 <div class="row myrow">
                     <div class="col-lg-6 col-sm-6 column">
                         <label class="label-input100" for="first-name">
@@ -329,9 +337,51 @@
                 </div>
             </div>
         </form>
-    </div>
+    <!-- ================================================================================================== -->
+    <!-- Footer -->
+   
+        <div class="myfooter" id="contact">
+            <div class="container">
+                <div class="row row-footer">
+                    <div class="col-lg-4 col-sm-6 col-footer">
+                        <img src="assets/images/phoenix-logo.jpg" class="myimg">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-footer">
+                        <b><h4>Contact</h4></b><br>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Technocity,Garia,Kolkata-700152</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91000000000</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Email:xyz@gmail.com</p>
+                        <p><i class="fa fa-university" aria-hidden="true"></i></p>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-footer">
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="bottom-footer">
+                    <div class="row row-footer-bottom">
+                        <div class="col-lg-6 col-sm-6"><h2><b>Phoenix</b></h2></div>
+                        <div class="col-lg-6 col-sm-6">
+                            <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;&nbsp; 2019 Phoenix. All Rights Reserved | Designed BY:
+                            <span class="tool">
+                                <span class="tootext"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;</span>
+                            </span>
+                            <span class="tool">
+                                <span class="tootext"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;</span>
+                            </span>
+                            <span class="tool">
+                                <span class="tootext"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;</span>
+                            </span>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </footer>
 
 
 </body>
-
 </html>
