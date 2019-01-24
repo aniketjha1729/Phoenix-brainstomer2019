@@ -2,20 +2,25 @@ body {
     margin: 0; 
     font-family: Arial, Helvetica, sans-serif;
   }
+  ::-webkit-scrollbar {
+    display: none;
+    }
   header{
+    margin-top: 0px;
     position: fixed;
+    z-index: 5;
   }
   
   .topnav {
-    margin-top: 0px !important;
     overflow: hidden;
-    height: 10vh;
+    height: 7vh;
+    background-color: #dcae1d;
   }
   .outerDiv{
 		height: 100vh;
     width: 100vw; 
 		margin: 0px auto;
-    padding: 5px;
+    /* padding: 5px; */
     background-image: url("background.jpg");
     background-repeat:no-repeat;
     background-size:cover;
@@ -27,7 +32,7 @@ body {
 		float: left;
     }
     .second-logo{
-    padding: 85px 0px 0px 50px;
+    padding: 115px 0px 0px 50px;
     }
     .sub-title{
     padding: 0px 0px 10px 150px;
@@ -59,7 +64,7 @@ body {
     display: block;
     color: #000;
     text-align: center;
-    padding: 25px 130px;
+    padding: 5px 150px;
     text-decoration: none;
     font-size: 23px;
     font-family: 'Staatliches', cursive;
@@ -123,7 +128,7 @@ text-decoration: underline orange;
     font-family: 'Barlow', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
 font-size: 30px;
-color: black;
+color: whitesmoke;
   }
   .container{
     display: flex;
@@ -152,12 +157,21 @@ color: black;
       padding: 32px;
     }
     .gallery{
-      margin-top: 7vh;
-      background-image: url("plain-white-background.jpg");
-      background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-
+      /* margin-top: 7vh; */
+      background-color: #232B2B;
+    }
+    #gallery-hd{
+      padding-top: 10vh;
+      font-family: 'Shrikhand', cursive;
+      color: #DC3D24;
+      font-size: 100px;
+    }
+    #gallery-shd{
+      font-family: 'Shrikhand', cursive;
+      font-family: 'Basic', sans-serif;
+      font-family: 'Advent Pro', sans-serif;
+      color: #E3AE57;
+      font-size: 20px;
     }
     
     .row {
@@ -188,7 +202,8 @@ color: black;
       transition: all 1000ms;
      }
      .registration{
-       background-color: aquamarine;
+       background-color: #191919;
+       height: 100vh;
      }
     
     /* Responsive layout - makes a two column-layout instead of four columns */
@@ -302,20 +317,14 @@ a.button {
   position: absolute;
   top: 0;
   left: -5vw;
-  width: 400px;
-  height: 60px;
+  width: 370px;
+  height: 50px;
   border-radius: 5px;
   transition: all 0.2s ;
   border: #000 solid 2px;
 }
 
-.btnBlueGreen.btnFloat:before {
-  background: #00AE68;
-}
 
-.btnLightBlue.btnFloat:before {
-  background: #5DC8CD;
-}
 
 .btnOrange.btnFloat:before {
   background: #dcae1d;
@@ -330,9 +339,6 @@ a.button {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
 }
 
-.btnFloat:hover:before {
-  
-}
 
 .btnFloat:hover:before {
   margin-top: -2px;
@@ -343,52 +349,6 @@ a.button {
   box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
 }
 
-/* SLIDE */
-.btnSlide.btnBlueGreen {
-  background: 0;
-}
 
-.btnSlide .top {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 120px;
-  height: 50px;
-  background: #00AE68;
-  z-index: 10;
-  transition: all 0.2s ;
-  border-radius: 5px;
-}
-
-.btnSlide.btnBlueGreen .top {
-  background: #00AE68;
-}
-
-.btnSlide.btnLightBlue .top {
-  background: #5DC8CD;
-}
-
-.btnSlide.btnOrange .top {
-  background: #FFAA40;
-}
-
-.btnSlide.btnPurple .top {
-  background: #A74982;
-}
-
-.btnSlide .bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 50px;
-  color: #000;
-  z-index: 5;
-  border-radius: 5px;
-}
-
-.btnSlide:hover .top {
-  top: 40px;
-}
 
 
