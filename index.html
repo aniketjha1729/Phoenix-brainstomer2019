@@ -25,8 +25,12 @@
             height: 100%;
             border-radius: 10px;
     }
-    .test-container{
+    .test-container-phoenix{
         background-color: #dcae1d;
+        margin-top: 0%;
+    }
+    .test-container-brainstomer{
+        background-color: #dc631d;
         margin-top: 0%;
     }
     </style>
@@ -48,8 +52,6 @@
                 </a>
             </div>
         </header>
-
-
         <div class="leftDiv" id="home">
             <img class="second-logo" src="assets/images/second-logo.png" height="300" width="700">
             <h2 class="sub-title">Get Your Master Brain Trigerred.</h2>
@@ -58,63 +60,37 @@
         <div class="rightDiv">
             <img class="brain" src="assets/images/brain1.png" height="600" width="550">
         </div>
-        
     </div>
-    <!-- about -->
-    <!-- <div class="about">
-        <div class="phoenix">
-            <span>
-                <div class="row">
-                    <div class="phoenix-logo">
-                        <img src="assets/images/phoenix-logo.jpg" height="327" width="310">
-                    </div>
-
-                    <div class="phoenix-about">
-                        <center>
-                            <h1 class="bg-hd">About phoenix</h1>
-                            <div class="line"></div>
-                            <p class="main-ct">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente molestiae, error corporis ut quod
-                                similique labore quibusdam incidunt cum quaerat at est, natus ipsa. Suscipit voluptatem reprehenderit
-                                dicta est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid fugit ratione itaque
-                                blanditiis, sed corporis error, natus quam iure omnis eveniet incidunt? Architecto provident
-                                dolore quisquam illo aspernatur unde sunt.
-                            </p>
-                        </center>
-                    </div>
-                </div>
-            </span>
-        </div> -->
-        <div class="test-container">
-            <h1><center> About Phoenix </center></h1>
+<!-- =================================================================================================== -->
+    <div class="test-container-phoenix">
+            <h1><center>Phoenix </center></h1>
             <div class="container test-container">
-                <div class="row">
-                    <div class="col-lg-6 test col-md-6 col-sm-6"> <img class="test-img" src="assets/images/phoenix-logo.jpg"></div>
-                    <div class="col-lg-6 test col-md-6 col-sm-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae nostrum cupiditate. Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
+                <div class="row row-footer">
+                    <div class="col-lg-4 col-sm-6 col-footer"> <img class="test-img" src="assets/images/phoenix-logo.jpg"></div>
+                    <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae nostrum cupiditate. <p> Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
+                    <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae nostrum cupiditate. <p> Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
+                </div>
+            </div>
+    </div>
+<!-- ========================================================================================================== -->
+    <div class="test-container-brainstomer">
+        <h1>
+            <center>BrainStomer</center>
+        </h1>
+        <div class="container test-container">
+            <div class="row row-footer">
+                <div class="col-lg-4 col-sm-6 col-footer"> <img class="test-img" src="assets/images/brainstomer-logo.png"></div>
+                <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur molestiae nostrum cupiditate. Aliquid placeat quisquam ut temporibus natus porro maxime
+                    voluptas, earum eaque nulla, nesciunt, adipisci at quae et? Reprehenderit! </div>
+                <div class="col-lg-4 col-sm-6 col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                        molestiae nostrum cupiditate. Aliquid placeat quisquam ut temporibus natus porro maxime voluptas, earum eaque
+                        nulla, nesciunt, adipisci at quae et? Reprehenderit!
                 </div>
             </div>
         </div>
-
-        <!-- <div class="brainstorm">
-            <div class="brainstorm-about">
-                <center>
-                    <h1 class="bg-hd">About Brainstomer</h1>
-                    <div class="line"></div>
-                    <p class="main-ct">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, ut quis, minima laudantium nihil sequi
-                        quia at ad aliquam vero rem repellendus ducimus Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Numquam, optio. Asperiores perspiciatis quia ducimus itaque ut, accusamus impedit enim aliquam
-                        culpa libero laborum sit fuga consequuntur molestias consectetur, tempore dignissimos. alias blanditiis
-                        soluta tempore quod impedit dolor.
-                    </p>
-                </center>
-            </div>
-            <div class="brainstorm-logo">
-                <img src="assets/images/brainstomer-logo.png" height="312" width="300">
-            </div>
-        </div> -->
     </div>
-
-
-
+<!-- =================================================================================================================== -->
     <!-- Gallery -->
     <div class="gallery" id="gallery">
         <center>
@@ -147,7 +123,7 @@
     </div>
     <div class="registration">
         <h1 class="register-hd">Get Yourself Registered.</h1>
-     <!-- <==============================================================================================================>    -->
+<!-- <==============================================================================================================>    -->
     <?php
     	$teamname=$firstname=$secondname=$email=$phone=$iname="";
     	$teamnameErr=$firstnameErr=$secondnameErr=$emailErr=$phoneErr=$inameErr="";
@@ -267,7 +243,7 @@
     		return $data;
     	}
     ?>
-    <!-- <==============================================================================================================>    -->
+<!-- ==============================================================================================================>    -->
         <!-- From -->
         <form method="post" class="myform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
             <div class="container mywrapper" id="register">
@@ -352,16 +328,15 @@
                 </div>
             </div>
         </form>
-    <!-- ================================================================================================== -->
+<!-- ================================================================================================== -->
     <!-- Footer -->
-   
         <div class="myfooter" id="contact">
             <div class="container">
                 <div class="row row-footer">
-                    <div class="col-lg-4 col-sm-6 col-footer">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-footer">
                         <img src="assets/images/phoenix-logo.jpg" class="myimg">
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-footer">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-footer">
                         <b><h4>Contact</h4></b><br>
                         <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Technocity,Garia,Kolkata-700152</p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91000000000</p>
@@ -369,8 +344,8 @@
                         <p><i class="fa fa-university" aria-hidden="true"></i></p>
 
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-footer">
-                        
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-footer">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos enim neque. Reiciendis, delectus error. Animi et, praesentium repellendus consectetur eaque facere? Laudantium quos sit voluptatibus fugit, aspernatur rem autem.
                     </div>
                 </div>
             </div>
@@ -393,10 +368,7 @@
                         
                     </div>
                 </div>
-            
         </div>
-    </footer>
-
-
+    
 </body>
 </html>
