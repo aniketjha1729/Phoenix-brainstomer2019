@@ -1,0 +1,73 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jan 25, 2019 at 03:10 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `brainstomer`
+--
+CREATE DATABASE IF NOT EXISTS `brainstomer` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `brainstomer`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reg`
+--
+
+CREATE TABLE `reg` (
+  `id` int(11) NOT NULL,
+  `teamname` varchar(50) NOT NULL,
+  `mem1` varchar(20) NOT NULL,
+  `mem2` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `phone` bigint(10) NOT NULL,
+  `institute` varchar(90) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `reg`
+--
+
+INSERT INTO `reg` (`id`, `teamname`, `mem1`, `mem2`, `email`, `phone`, `institute`) VALUES
+(1, 'cognito', 'Aniket', 'Kumar', 'kumaraniket1729@gmail.com', 8651269470, 'Netaji Subhash Engineetin College');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `reg`
+--
+ALTER TABLE `reg`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `reg`
+--
+ALTER TABLE `reg`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
