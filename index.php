@@ -121,7 +121,7 @@
         </nav>
         <img class="second-logo" src="assets/images/second-logo.png">
     </div>
-<!-- ========================================================================================================================= -->
+    <!-- =================================================================================================== -->
     <div class="about-my" id="about">
         <div class="test-container-phoenix">
             <h1>
@@ -225,10 +225,10 @@
     		} else {
     			$teamname = test_input($_POST["team-name"]);
     			// check if name only contains letters and whitespace
-    			if (!preg_match("/^[a-zA-Z ]*$/",$teamname)) {
-    				$teamnameErr = "Only letters and white space allowed";
-    				$errorfree=1; 
-    			}
+    			// if (!preg_match("/^[a-zA-Z ]*$/",$teamname)) {
+    			// 	$teamnameErr = "Only letters and white space allowed";
+    			// 	$errorfree=1; 
+    			// }
     		}
     		if (empty($_POST["first-name"])) {
     			$firstnameErr = "Member1 name  is required";
@@ -307,7 +307,7 @@
     							echo "sql error";
     						}
     					}else{
-                            ?><script> alert("Team-Name/ Registered");</script><?php
+                            ?><script> alert("Team-Name/Email/Phone Already Used");</script><?php
     					}
     				}
     			}else{
