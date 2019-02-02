@@ -148,7 +148,7 @@ iframe {
 
 .label-input100 {
   font-family: Poppins-Regular;
-  font-size: 17px;
+  font-size: 12px;
   color: #ffffff;
   line-height: 1.5;
   text-transform: uppercase;
@@ -377,8 +377,13 @@ input.input100 {
   }
 }
 
-
-.error{
-  color:red;
-}
+.mywrapper {
+            margin-top: 2%;
+        }
+        .myrow {
+            margin-top: 0%;
+        }
+        .error{
+            color:red;
+        }
 
