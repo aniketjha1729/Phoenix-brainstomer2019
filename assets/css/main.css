@@ -11,6 +11,7 @@ body {
     overflow: hidden;
     height: 10vh;
   }
+  
   .outerDiv{
 		height: 100vh;
     width: 100vw; 
@@ -210,16 +211,15 @@ opacity: 0.5;
       cursor: pointer;
      }
      .registration{
-      background: #000046;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #373B44;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
       
      }
      .register-hd{
-      font-family: 'Advent Pro', sans-serif;
-      font-family: 'Basic', sans-serif;
-      font-family: 'Shrikhand', cursive;
-      font-family: 'Lobster', cursive;
+      font-family: 'Raleway', sans-serif;
+
       color: white;
       font-size: 90px;
      }
