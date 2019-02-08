@@ -1,0 +1,342 @@
+body {
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* header{
+    position: fixed;
+  } */
+  
+  .topnav {
+    margin-top: 0px !important;
+    overflow: hidden;
+    height: 10vh;
+  }
+  
+  .outerDiv{
+		height: 100vh;
+    width: 100vw; 
+		margin: 0px auto;
+    padding: 5px;
+    background-image: url("../images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+   
+		/* .leftDiv{
+		height: 90vh;
+		width: 100%;
+		float: left;
+    }*/
+    .second-logo{
+    height: 80%;
+    width: 70%;
+    margin-left: 10vw;
+    } 
+    .sub-title{
+    padding: 0px 0px 10px 150px;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 40px;
+    }
+    .register-btn{
+      background-color: ;
+      margin-left:41vw;
+      margin-top: 25vh;
+      height: 50px;
+      width: 200px;
+    }
+
+		.rightDiv{
+				height: 90vh;
+				width: 40%;
+				float: right;
+     }	
+     .brain{
+     padding:130px 0px 0px 0px;
+    }		
+  
+  .topnav a {
+    float: left; 
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 25px 130px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Staatliches', cursive;
+  }
+  
+  .topnav a:hover {
+    color: #D2D1D7;
+  }
+  
+  
+  .topnav .icon {
+    display: none;
+  }
+  .about-my{
+    background: url("../images/main.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+   
+    
+    
+  }
+
+  /* .phoenix-logo{
+    margin-top: 12vh;
+    float: left;
+    height: 45vh;
+    width: 20vw;
+  }
+  .phoenix-about{
+    margin-top: 12vh;
+    float: right;
+    height: 45vh;
+    width: 80vw;
+  } */
+  .brainstorm-logo{
+float: right;
+height: 50vh;
+    width: 20vw;
+  }
+  .brainstorm-about{
+    float: left;
+    height: 50vh;
+    width: 80vw;
+  }
+  .bg-hd{
+    font-family: 'Acme', sans-serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Courgette', cursive;
+font-size: 40px;
+text-decoration: underline orange;
+  }
+  .main-ct{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+font-size: 30px;
+color: black;
+  }
+  /* .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    } */
+    /* .container {
+        margin: 5px;
+        transition: all 1s;
+    }
+    .container {
+        transform: scale(1.1)
+    } */
+  
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* body {
+      margin: 0;
+      font-family: Arial;
+    } */
+    
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+    .gallery{
+      /* margin-top: 7vh; */
+      background-image: url("../images/gallery-back.jpg");
+      background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+    }
+    .gallery-hd{
+      font-family: 'Advent Pro', sans-serif;
+font-family: 'Basic', sans-serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Lobster', cursive;
+color: #fc4a1a;
+font-size: 90px;
+    }
+    .gallery-sbhd{
+      font-family: 'Advent Pro', sans-serif;
+font-family: 'Basic', sans-serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Fjalla One', sans-serif;
+color: black;
+font-size: 30px;
+background-color: beige;
+opacity: 0.5;
+    }
+    
+    .row-gallery {
+      /* margin-top: 10vh; */
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 10px 30px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      /* box-shadow: 5px 5px grey; */
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .column img:hover {
+      transform: scale(1.2);
+      transition: all 1000ms;
+      cursor: pointer;
+      box-shadow: 5px 5px 10px 5px rgb(42, 64, 78); 
+     }
+     .registration{
+      background: #373B44;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+      
+     }
+     .register-hd{
+      font-family: 'Raleway', sans-serif;
+
+      color: white;
+      font-size: 70px;
+     }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }  
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+
+  
+  
+  @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+
+.wrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.container {
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 
+    solid
+    1px
+    #CCC;
+}
+
+
+@media screen and (max-width: 500px){
+  .second-logo{
+    height: 50;
+  }
+}
+
+
+
+
+.test-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .test-container-phoenix {
+            /* background-color: #dcae1d; */
+            margin-top: 0%;
+            color: aliceblue;
+            font-family: 'Advent Pro', sans-serif;
+            font-family: 'Basic', sans-serif;
+            font-family: 'Shrikhand', cursive;
+            font-family: 'Lobster', cursive;
+            font-family: 'Fjalla One', sans-serif;
+            font-family: 'Patua One', cursive;
+            font-family: 'Crete Round', serif;
+            font-size: 17px;
+        }
+
+        .test-container-brainstomer {
+            /* background-color: #dc631d; */
+            margin-top: 0%;
+            color: aliceblue;
+            font-family: 'Advent Pro', sans-serif;
+            font-family: 'Basic', sans-serif;
+            font-family: 'Shrikhand', cursive;
+            font-family: 'Lobster', cursive;
+            font-family: 'Fjalla One', sans-serif;
+            font-family: 'Patua One', cursive;
+            font-family: 'Crete Round', serif;
+            font-size: 17px;
+        }
+
+        .bg-hd {
+            color: black;
+        }
+
+        .my-nav-last {
+            background-color: black !important;
+            margin-top: 0%;
+
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        @media only screen and (max-width: 480px){
+    .emailButton{
+      max-width:600px !important;
+      width:100% !important;
+    }
+
+    .emailButton a{
+      display:block !important;
+      font-size:18px !important;
+    }
+  }
+  @media only screen and (max-width: 480px){
+      .second-logo{
+          width: 100%;
+          margin-left: 0vw;
+          margin-right: 5vw;
+      }
+  }
