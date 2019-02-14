@@ -24,7 +24,7 @@
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <title>Brainstorm</title>
 </head>
-<!-- ======================================================================================================== -->
+<!-- ============================================================================================================== -->
 <body>
     <div class="outerDiv" id="home">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-nav-last" id="mainNav">
